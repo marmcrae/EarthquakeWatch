@@ -45,16 +45,15 @@
                 android:layout_height="25dp"
                 android:id="@+id/dismissPopup"
                 android:layout_alignParentRight="true"
-                android:layout_alignBottom="@+id/popListTitle"
-                android:background="@android:drawable/ic_menu_close_clear_cancel"/>
+                android:layout_alignBottom="@+id/popTitle"
+                android:background="@drawable/ic_close_black_24dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/popList"
                 android:layout_below="@id/popListTitle"
-                android:textSize="15sp"
-                android:text="GGGGGG"/>
+                android:textSize="15sp" />
 
             <WebView
                 android:layout_width="wrap_content"
@@ -71,6 +70,7 @@
                 android:id="@+id/dismissPop"
                 android:background="@android:color/holo_blue_dark"
                 android:text="Close"
+                android:textColor="@android:color/white"
                 android:textStyle="bold"
                 android:layout_below="@+id/htmlWebview"
                 android:layout_centerHorizontal="true"/>
