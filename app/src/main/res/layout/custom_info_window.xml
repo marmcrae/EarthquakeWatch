@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iconInfo"
+                android:src="@android:drawable/btn_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/winTitle"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/iconInfo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/magnitude"
+                android:textSize="13sp"
+                android:layout_toRightOf="@+id/iconInfo"
+                android:layout_below="@+id/winTitle"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn"
+                android:layout_below="@+id/winTitle"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="More info....."
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
